@@ -21,25 +21,25 @@
 	reviewed activity_labels.txt text to use in place of numeric range 1:5
 	used subtotal function to find a few of final mean calculations for verification
 
-Data Set			Rows		Columns		Description
+Data Set&nbsp;			Rows&nbsp;		Columns&nbsp;		Description&nbsp;
 
 <li>subject_test.txt&nbsp;		2947&nbsp;		1&nbsp;		Subjects correlating to test data 1:30</li>
 
-<li>X_test.txt<br />			2947<br />		561<br />		Data measurements - test data set</li>
+<li>X_test.txt&nbsp;			2947&nbsp;		561&nbsp;		Data measurements - test data set</li>
 
-<li>y_test.txt<br />		2947<br />		1<br />		Activities correlating to test data 1:6</li>
+<li>y_test.txt&nbsp;		2947&nbsp;		1&nbsp;		Activities correlating to test data 1:6</li>
 
-<li>subject_train.txt		7352		1		Subjects correlating to train data 1:30</li>
+<li>subject_train.txt&nbsp;		7352&nbsp;		1&nbsp;		Subjects correlating to train data 1:30</li>
 
-<li>X_train.txt			7352		561		Data measurements - train data set</li>
+<li>X_train.txt	&nbsp;		7352&nbsp;		561&nbsp;		Data measurements - train data set</li>
 
-<li>y_train.txt			7352		1		Activities correlating to train data 1:6</li>
+<li>y_train.txt&nbsp;			7352&nbsp;		1&nbsp;		Activities correlating to train data 1:6</li>
 
-<li>features.txt			561		2		Columns for data measurements</li>
+<li>features.txt&nbsp;			561&nbsp;		2&nbsp;		Columns for data measurements</li>
 
-<li>accel				10299		563	Combined test and train including subject and activity columns</li>
+<li>accel&nbsp;				10299&nbsp;		563&nbsp;	Combined test and train including subject and activity columns</li>
 
-<li>accelmean			180		88		Final data set: means of all columns containing "std", "mean"</li>
+<li>accelmean&nbsp;			180&nbsp;		88&nbsp;		Final data set: means of all columns containing "std", "mean"</li>
 
 R function run_analysis.r performs the tasks that produce a data set with the columns in Table 1. 
 See document README.md for a detailed description of how run_analysis.r works.
