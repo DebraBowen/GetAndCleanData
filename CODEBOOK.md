@@ -25,21 +25,21 @@ Data Set			Rows		Columns		Description
 
 <li>subject_test.txt		2947		1		Subjects correlating to test data 1:30</li>
 
-X_test.txt			2947		561		Data measurements - test data set
+<li>X_test.txt			2947		561		Data measurements - test data set</li>
 
-y_test.txt			2947		1		Activities correlating to test data 1:6
+<li>y_test.txt			2947		1		Activities correlating to test data 1:6</li>
 
-subject_train.txt		7352		1		Subjects correlating to train data 1:30
+<li>subject_train.txt		7352		1		Subjects correlating to train data 1:30</li>
 
-X_train.txt			7352		561		Data measurements - train data set
+<li>X_train.txt			7352		561		Data measurements - train data set</li>
 
-y_train.txt			7352		1		Activities correlating to train data 1:6
+<li>y_train.txt			7352		1		Activities correlating to train data 1:6</li>
 
-features.txt			561		2		Columns for data measurements
+<li>features.txt			561		2		Columns for data measurements</li>
 
-accel				10299		563		Combined test and train including subject and activity columns
+<li>accel				10299		563	Combined test and train including subject and activity columns</li>
 
-accelmean			180		88		Final data set: means of all columns containing "std", "mean"
+<li>accelmean			180		88		Final data set: means of all columns containing "std", "mean"</li>
 
 R function run_analysis.r performs the tasks that produce a data set with the columns in Table 1. 
 See document README.md for a detailed description of how run_analysis.r works.
