@@ -12,27 +12,27 @@
 R function run_analysis.r performs the following tasks:
 
 1) housekeeping and reads
-	set working directory
-	read X_test.txt into table test: test measurement data set
-	read X_train.txt into table train: train measurement data set
-	read y_test.txt into table testactivity: activity column for test
-	read y_train.txt into table trainactivity: activity column for train
-	read subject_test.txt into table testsubject: subject column for test
-	read subject_train.txt into table trainsubject: subject column for train
-	read measurements.csv into table measurements: column headings for data
+	<li>set working directory
+	<li>read X_test.txt into table test: test measurement data set</li>
+	<li>read X_train.txt into table train: train measurement data set</li>
+	<li>read y_test.txt into table testactivity: activity column for test</li>
+	<li>read y_train.txt into table trainactivity: activity column for train</li>
+	<li>read subject_test.txt into table testsubject: subject column for test</li>
+	<li>read subject_train.txt into table trainsubject: subject column for train</li>
+	<li>read measurements.csv into table measurements: column headings for data</li>
 
 2) work with column names, keeping data consistent at each step
-	assign measurements col names: "colid", "accelname"
-	assign testsubject col name: "subject"
-	assign trainsubject col name: "subject"
-	convert activity numbers to text: 
+	<li>assign measurements col names: "colid", "accelname"</li>
+	<li>assign testsubject col name: "subject"</li>
+	<li>assign trainsubject col name: "subject"</li>
+	<li>convert activity numbers to text: </li>
 		"walk", "walkupstairs", "walkdownstairs", "sit", "stand", "lay"
-	combine activity and subject with test, placing subject into 1st column
-	combine activity and subject with train, placing subject into 1st column
-	rename 1st and 2nd column in test to "subject" and "activity"
-	rename 1st and 2nd column in train to "subject" and "activity"
-	create vector "namesvector" with measurement column names
-	recreate namesvector with "subject" as 1st column and "activity" as 2nd column
+	<li>combine activity and subject with test, placing subject into 1st column</li>
+	<li>combine activity and subject with train, placing subject into 1st column</li>
+	<li>rename 1st and 2nd column in test to "subject" and "activity"</li>
+	<li>rename 1st and 2nd column in train to "subject" and "activity"</li>
+	<li>create vector "namesvector" with measurement column names</li>
+	<li>recreate namesvector with "subject" as 1st column and "activity" as 2nd column</li>
         
 3) merge test and train data to dataframe testtrain
 
