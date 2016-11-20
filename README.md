@@ -25,8 +25,7 @@ R function run_analysis.r performs the following tasks:
 	<li>assign measurements col names: "colid", "accelname"</li>
 	<li>assign testsubject col name: "subject"</li>
 	<li>assign trainsubject col name: "subject"</li>
-	<li>convert activity numbers to text: </li>
-		"walk", "walkupstairs", "walkdownstairs", "sit", "stand", "lay"
+	<li>convert activity numbers to text: &nbsp;"walk", "walkupstairs", "walkdownstairs", "sit", "stand", "lay"</li>
 	<li>combine activity and subject with test, placing subject into 1st column</li>
 	<li>combine activity and subject with train, placing subject into 1st column</li>
 	<li>rename 1st and 2nd column in test to "subject" and "activity"</li>
@@ -37,26 +36,26 @@ R function run_analysis.r performs the following tasks:
 3) merge test and train data to dataframe testtrain
 
 4) work with testtrain columns to get only those wanted in data set
-	assign measurement column names to merged data
-	create data frames with columns: std dev, Mean/mean, subject and activity
-	change "subject" column to numeric
-	change "activity" column to character
-	create dataframe with activity, subject, mean and std dev columns
+	<li>assign measurement column names to merged data</li>
+	<li>create data frames with columns: std dev, Mean/mean, subject and activity</li>
+	<li>change "subject" column to numeric</li>
+	<li>change "activity" column to character</li>
+	<li>create dataframe with activity, subject, mean and std dev columns</li>
 	
 5) remove unwanted elements from column names
-	change data column names to lower case
-	remove from column names:
-	()
-	-
-	(
-	(
-	,
+	<li>change data column names to lower case</li>
+	<li>remove from column names:</li><br />
+	()<br />
+	-<br />
+	(<br />
+	(<br />
+	,<br />
  
 6) extract tidy data set
-	sort by activity, subject:
-	create an independent tidy data set with the mean of each variable:
-	rename 1st and 2nd columns to "subject" and "activity"
-	return dataframe : accelmean
+	<li>sort by activity, subject</li>
+	<li>create an independent tidy data set with the mean of each variable</li>
+	<li>rename 1st and 2nd columns to "subject" and "activity"</li>
+	<li>return dataframe accelmean</li>
 
 
 ### Section 2: Original Data Set Readme doc
