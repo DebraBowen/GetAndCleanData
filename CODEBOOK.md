@@ -55,96 +55,95 @@ The original data columns are listed in table 2.
 
 ###Columns included in final data set produced by running run_analysis.r function
 Table 1
-Col#-Column name							Mean/Stddev-Accelerometer/Gyroscope-Body/Gravity-Jerk Signals-Magnitude
-											-Time/frequency domain-x:y:z axial
-1-subject:person providing data; range 1:30
-2-activity: range:lay, sit, stand, walk, walkdownstairs, walkupstairs
-3-tbodyaccstdx								Std-Accel-Body---time-x
-4-tbodyaccstdy								Std-Accel-Body---time-y
-5-tbodyaccstdz								Std-Accel-Body---time-z
-6-tgravityaccstdx							Std-Accel-Gravity---time-x
-7-tgravityaccstdy							Std-Accel-Gravity---time-y
-8-tgravityaccstdz							Std-Accel-Gravity---time-z
-9-tbodyaccjerkstdx							Std-Accel-Body-Jerk--time-x
-10-tbodyaccjerkstdy							Std-Accel-Body-Jerk--time-y
-11-tbodyaccjerkstdz							Std-Accel-Body-Jerk--time-z
-12-tbodygyrostdx							Std-Gyro-Body---time-x
-13-tbodygyrostdy							Std-Gyro-Body---time-y
-14-tbodygyrostdz							Std-Gyro-Body---time-z
-15-tbodygyrojerkstdx						Std-Gyro-Body-Jerk--time-x
-16-tbodygyrojerkstdy						Std-Gyro-Body-Jerk--time-y
-17-tbodygyrojerkstdz						Std-Gyro-Body-Jerk--time-z
-18-tbodyaccmagstd							Std-Accel-Body--Mag-time
-19-tgravityaccmagstd						Std-Accel-Gravity--Mag-time
-20-tbodyaccjerkmagstd						Std-Accel-Body-Jerk-Mag-time
-21-tbodygyromagstd							Std-Gyro-Body--Mag-time
-22-tbodygyrojerkmagstd						Std-Gyro-Body-Jerk-Mag-time
-23-fbodyaccstdx								Std-Accel-Body---frequency-x
-24-fbodyaccstdy								Std-Accel-Body---frequency-y
-25-fbodyaccstdz								Std-Accel-Body---frequency-z
-26-fbodyaccjerkstdx							Std-Accel-Body-Jerk--frequency-x
-27-fbodyaccjerkstdy							Std-Accel-Body-Jerk--frequency-y
-28-fbodyaccjerkstdz							Std-Accel-Body-Jerk--frequency-z
-29-fbodygyrostdx							Std-Gyro-Body---frequency-x
-30-fbodygyrostdy							Std-Gyro-Body---frequency-y
-31-fbodygyrostdz							Std-Gyro-Body---frequency-z
-32-fbodyaccmagstd							Std-Accel-Body--Mag-frequency
-33-fbodybodyaccjerkmagstd					Std-Accel-Body-Jerk-Mag-frequency
-34-fbodybodygyromagstd						Std-Gyro-Body--Mag-frequency
-35-fbodybodygyrojerkmagstd					Std-Gyro-Body-Jerk-Mag-frequency
-36-angletbodyaccmeangravity					Mean-Accel-Body/Gravity
-37-angletbodyaccjerkmeangravitymean			Mean-Accel-Body/Gravity-Jerk
-38-angletbodygyromeangravitymean			Mean-Gyro-Body/Gravity
-39-angletbodygyrojerkmeangravitymean		Mean-Gyro-Body/Gravity-Jerk
-40-anglexgravitymean						Mean-Gravity
-41-angleygravitymean						Mean-Gravity
-42-anglezgravitymean						Mean-Gravity
-43-tbodyaccmeanx							Mean-Accel-Body-time-x
-44-tbodyaccmeany							Mean-Accel-Body---time-y
-45-tbodyaccmeanz							Mean-Accel-Body---time-z
-46-tgravityaccmeanx							Mean-Accel-Gravity---time-x
-47-tgravityaccmeany							Mean-Accel-Gravity---time-y
-48-tgravityaccmeanz							Mean-Accel-Gravity---time-z
-49-tbodyaccjerkmeanx						Mean-Accel-Body-Jerk--time-x
-50-tbodyaccjerkmeany						Mean-Accel-Body-Jerk--time-y
-51-tbodyaccjerkmeanz						Mean-Accel-Body-Jerk--time-z
-52-tbodygyromeanx							Mean-Gyro-Body---time-x
-53-tbodygyromeany							Mean-Gyro-Body---time-y
-54-tbodygyromeanz							Mean-Gyro-Body---time-z
-55-tbodygyrojerkmeanx						Mean-Gyro-Body-Jerk--time-x
-56-tbodygyrojerkmeany						Mean-Gyro-Body-Jerk--time-y
-57-tbodygyrojerkmeanz						Mean-Gyro-Body-Jerk--time-z
-58-tbodyaccmagmean							Mean-Accel-Body--Mag-time
-59-tgravityaccmagmean						Mean-Accel-Gravity--Mag-time
-60-tbodyaccjerkmagmean						Mean-Accel-Body-Jerk-Mag-time
-61-tbodygyromagmean							Mean-Gyro-Body--Mag-time
-62-tbodygyrojerkmagmean						Mean-Gyro-Body-Jerk-Mag-time
-63-fbodyaccmeanx							Mean-Accel-Body-frequency-x
-64-fbodyaccmeany							Mean-Accel-Body-frequency-y
-65-fbodyaccmeanz							Mean-Accel-Body-frequency-z
-66-fbodyaccmeanfreqx						Mean-Accel-Body-frequency-x
-67-fbodyaccmeanfreqy						Mean-Accel-Body-frequency-y
-68-fbodyaccmeanfreqz						Mean-Accel-Body-frequency-z
-69-fbodyaccjerkmeanx						Mean-Accel-Body-Jerk-frequency-x
-70-fbodyaccjerkmeany						Mean-Accel-Body-Jerk-frequency-y
-71-fbodyaccjerkmeanz						Mean-Accel-Body-Jerk-frequency-z
-72-fbodyaccjerkmeanfreqx					Mean-Accel-Body-Jerk-frequency-x
-73-fbodyaccjerkmeanfreqy					Mean-Accel-Body-Jerk-frequency-y
-74-fbodyaccjerkmeanfreqz					Mean-Accel-Body-Jerk-frequency-z
-75-fbodygyromeanx							Mean-Gyro-Body-frequency-x
-76-fbodygyromeany							Mean-Gyro-Body-frequency-y
-77-fbodygyromeanz							Mean-Gyro-Body-frequency-z
-78-fbodygyromeanfreqx						Mean-Gyro-Body-frequency-x
-79-fbodygyromeanfreqy						Mean-Gyro-Body-frequency-y
-80-fbodygyromeanfreqz						Mean-Gyro-Body-frequency-z
-81-fbodyaccmagmean							Mean-Accel-Body-Mag-frequency
-82-fbodyaccmagmeanfreq						Mean-Accel-Body-Mag-frequency
-83-fbodybodyaccjerkmagmean					Mean-Accel-Body-Jerk-Mag-frequency
-84-fbodybodyaccjerk magmeanfreq				Mean-Accel-Body-Jerk-Mag-frequency
-85-fbodybodygyromagmean						Mean-Gyro-Body--Mag-frequency
-86-fbodybodygyromagmeanfreq					Mean-Gyro-Body--Mag-frequency
-87-fbodybodygyrojerkmagmean					Mean-Gyro-Body-Jerk-Mag-frequency
-88-fbodybodygyrojerkmagmeanfreq				Mean-Gyro-Body-Jerk-Mag-frequency	
+Col#-Column name&nbsp;	Mean/Stddev-Accelerometer/Gyroscope-Body/Gravity-Jerk Signals-Magnitude-Time/frequency domain-x:y:z axial</br>
+1-subject:person providing data; range 1:30</br>
+2-activity: range:lay, sit, stand, walk, walkdownstairs, walkupstairs</br>
+3-tbodyaccstdx	&nbsp;							Std-Accel-Body---time-x</br>
+4-tbodyaccstdy	&nbsp;							Std-Accel-Body---time-y</br>
+5-tbodyaccstdz	&nbsp;							Std-Accel-Body---time-z</br>
+6-tgravityaccstdx	&nbsp;						Std-Accel-Gravity---time-x</br>
+7-tgravityaccstdy&nbsp;							Std-Accel-Gravity---time-y</br>
+8-tgravityaccstdz&nbsp;							Std-Accel-Gravity---time-z</br>
+9-tbodyaccjerkstdx&nbsp;							Std-Accel-Body-Jerk--time-x</br>
+10-tbodyaccjerkstdy&nbsp;							Std-Accel-Body-Jerk--time-y</br>
+11-tbodyaccjerkstdz	&nbsp;						Std-Accel-Body-Jerk--time-z</br>
+12-tbodygyrostdx	&nbsp;						Std-Gyro-Body---time-x</br>
+13-tbodygyrostdy	&nbsp;						Std-Gyro-Body---time-y</br>
+14-tbodygyrostdz	&nbsp;						Std-Gyro-Body---time-z</br>
+15-tbodygyrojerkstdx	&nbsp;					Std-Gyro-Body-Jerk--time-x</br>
+16-tbodygyrojerkstdy	&nbsp;					Std-Gyro-Body-Jerk--time-y</br>
+17-tbodygyrojerkstdz	&nbsp;					Std-Gyro-Body-Jerk--time-z</br>
+18-tbodyaccmagstd	&nbsp;						Std-Accel-Body--Mag-time</br>
+19-tgravityaccmagstd	&nbsp;					Std-Accel-Gravity--Mag-time</br>
+20-tbodyaccjerkmagstd	&nbsp;					Std-Accel-Body-Jerk-Mag-time</br>
+21-tbodygyromagstd	&nbsp;						Std-Gyro-Body--Mag-time</br>
+22-tbodygyrojerkmagstd	&nbsp;					Std-Gyro-Body-Jerk-Mag-time</br>
+23-fbodyaccstdx		&nbsp;						Std-Accel-Body---frequency-x</br>
+24-fbodyaccstdy		&nbsp;						Std-Accel-Body---frequency-y</br>
+25-fbodyaccstdz		&nbsp;						Std-Accel-Body---frequency-z</br>
+26-fbodyaccjerkstdx	&nbsp;						Std-Accel-Body-Jerk--frequency-x</br>
+27-fbodyaccjerkstdy	&nbsp;						Std-Accel-Body-Jerk--frequency-y</br>
+28-fbodyaccjerkstdz	&nbsp;						Std-Accel-Body-Jerk--frequency-z</br>
+29-fbodygyrostdx	&nbsp;						Std-Gyro-Body---frequency-x</br>
+30-fbodygyrostdy	&nbsp;						Std-Gyro-Body---frequency-y</br>
+31-fbodygyrostdz		&nbsp;					Std-Gyro-Body---frequency-z</br>
+32-fbodyaccmagstd		&nbsp;					Std-Accel-Body--Mag-frequency</br>
+33-fbodybodyaccjerkmagstd	&nbsp;				Std-Accel-Body-Jerk-Mag-frequency</br>
+34-fbodybodygyromagstd		&nbsp;				Std-Gyro-Body--Mag-frequency</br>
+35-fbodybodygyrojerkmagstd		&nbsp;			Std-Gyro-Body-Jerk-Mag-frequency</br>
+36-angletbodyaccmeangravity		&nbsp;			Mean-Accel-Body/Gravity</br>
+37-angletbodyaccjerkmeangravitymean	&nbsp;		Mean-Accel-Body/Gravity-Jerk</br>
+38-angletbodygyromeangravitymean	&nbsp;		Mean-Gyro-Body/Gravity</br>
+39-angletbodygyrojerkmeangravitymean	&nbsp;	Mean-Gyro-Body/Gravity-Jerk</br>
+40-anglexgravitymean			&nbsp;			Mean-Gravity</br>
+41-angleygravitymean			&nbsp;			Mean-Gravity</br>
+42-anglezgravitymean			&nbsp;			Mean-Gravity</br>
+43-tbodyaccmeanx			&nbsp;				Mean-Accel-Body-time-x</br>
+44-tbodyaccmeany			&nbsp;				Mean-Accel-Body---time-y</br>
+45-tbodyaccmeanz			&nbsp;				Mean-Accel-Body---time-z</br>
+46-tgravityaccmeanx			&nbsp;				Mean-Accel-Gravity---time-x</br>
+47-tgravityaccmeany			&nbsp;				Mean-Accel-Gravity---time-y</br>
+48-tgravityaccmeanz			&nbsp;				Mean-Accel-Gravity---time-z</br>
+49-tbodyaccjerkmeanx			&nbsp;			Mean-Accel-Body-Jerk--time-x</br>
+50-tbodyaccjerkmeany			&nbsp;			Mean-Accel-Body-Jerk--time-y</br>
+51-tbodyaccjerkmeanz			&nbsp;			Mean-Accel-Body-Jerk--time-z</br>
+52-tbodygyromeanx			&nbsp;				Mean-Gyro-Body---time-x</br>
+53-tbodygyromeany			&nbsp;				Mean-Gyro-Body---time-y</br>
+54-tbodygyromeanz			&nbsp;				Mean-Gyro-Body---time-z</br>
+55-tbodygyrojerkmeanx			&nbsp;			Mean-Gyro-Body-Jerk--time-x</br>
+56-tbodygyrojerkmeany			&nbsp;			Mean-Gyro-Body-Jerk--time-y</br>
+57-tbodygyrojerkmeanz			&nbsp;			Mean-Gyro-Body-Jerk--time-z</br>
+58-tbodyaccmagmean			&nbsp;				Mean-Accel-Body--Mag-time</br>
+59-tgravityaccmagmean			&nbsp;			Mean-Accel-Gravity--Mag-time</br>
+60-tbodyaccjerkmagmean			&nbsp;			Mean-Accel-Body-Jerk-Mag-time</br>
+61-tbodygyromagmean			&nbsp;				Mean-Gyro-Body--Mag-time</br>
+62-tbodygyrojerkmagmean			&nbsp;			Mean-Gyro-Body-Jerk-Mag-time</br>
+63-fbodyaccmeanx			&nbsp;				Mean-Accel-Body-frequency-x</br>
+64-fbodyaccmeany			&nbsp;				Mean-Accel-Body-frequency-y</br>
+65-fbodyaccmeanz			&nbsp;				Mean-Accel-Body-frequency-z</br>
+66-fbodyaccmeanfreqx			&nbsp;			Mean-Accel-Body-frequency-x</br>
+67-fbodyaccmeanfreqy			&nbsp;			Mean-Accel-Body-frequency-y</br>
+68-fbodyaccmeanfreqz			&nbsp;			Mean-Accel-Body-frequency-z</br>
+69-fbodyaccjerkmeanx			&nbsp;			Mean-Accel-Body-Jerk-frequency-x</br>
+70-fbodyaccjerkmeany			&nbsp;			Mean-Accel-Body-Jerk-frequency-y</br>
+71-fbodyaccjerkmeanz			&nbsp;			Mean-Accel-Body-Jerk-frequency-z</br>
+72-fbodyaccjerkmeanfreqx		&nbsp;			Mean-Accel-Body-Jerk-frequency-x</br>
+73-fbodyaccjerkmeanfreqy		&nbsp;			Mean-Accel-Body-Jerk-frequency-y</br>
+74-fbodyaccjerkmeanfreqz		&nbsp;			Mean-Accel-Body-Jerk-frequency-z</br>
+75-fbodygyromeanx			&nbsp;				Mean-Gyro-Body-frequency-x</br>
+76-fbodygyromeany			&nbsp;				Mean-Gyro-Body-frequency-y</br>
+77-fbodygyromeanz			&nbsp;				Mean-Gyro-Body-frequency-z</br>
+78-fbodygyromeanfreqx			&nbsp;			Mean-Gyro-Body-frequency-x</br>
+79-fbodygyromeanfreqy			&nbsp;			Mean-Gyro-Body-frequency-y</br>
+80-fbodygyromeanfreqz			&nbsp;			Mean-Gyro-Body-frequency-z</br>
+81-fbodyaccmagmean			&nbsp;				Mean-Accel-Body-Mag-frequency</br>
+82-fbodyaccmagmeanfreq			&nbsp;			Mean-Accel-Body-Mag-frequency</br>
+83-fbodybodyaccjerkmagmean		&nbsp;			Mean-Accel-Body-Jerk-Mag-frequency</br>
+84-fbodybodyaccjerk magmeanfreq		&nbsp;		Mean-Accel-Body-Jerk-Mag-frequency</br>
+85-fbodybodygyromagmean			&nbsp;			Mean-Gyro-Body--Mag-frequency</br>
+86-fbodybodygyromagmeanfreq		&nbsp;			Mean-Gyro-Body--Mag-frequency</br>
+87-fbodybodygyrojerkmagmean		&nbsp;			Mean-Gyro-Body-Jerk-Mag-frequency</br>
+88-fbodybodygyrojerkmagmeanfreq		&nbsp;		Mean-Gyro-Body-Jerk-Mag-frequency</br>	
 
 ### CODE BOOK FROM ORIGINAL DATA SET FOLLOWS:
 Feature Selection 
