@@ -23,7 +23,7 @@
 
 Data Set			Rows		Columns		Description
 
-<li>subject_test.txt<br />		2947<br />		1<br />		Subjects correlating to test data 1:30</li>
+<li>subject_test.txt&nbsp;		2947&nbsp;		1&nbsp;		Subjects correlating to test data 1:30</li>
 
 <li>X_test.txt<br />			2947<br />		561<br />		Data measurements - test data set</li>
 
