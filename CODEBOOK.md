@@ -23,11 +23,11 @@
 
 Data Set			Rows		Columns		Description
 
-<li>subject_test.txt		2947		1		Subjects correlating to test data 1:30</li>
+<li>subject_test.txt<br />		2947<br />		1<br />		Subjects correlating to test data 1:30</li>
 
-<li>X_test.txt			2947		561		Data measurements - test data set</li>
+<li>X_test.txt<br />			2947<br />		561<br />		Data measurements - test data set</li>
 
-<li>y_test.txt			2947		1		Activities correlating to test data 1:6</li>
+<li>y_test.txt<br />		2947<br />		1<br />		Activities correlating to test data 1:6</li>
 
 <li>subject_train.txt		7352		1		Subjects correlating to train data 1:30</li>
 
