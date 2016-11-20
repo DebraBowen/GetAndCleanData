@@ -22,15 +22,24 @@
 	used subtotal function to find a few of final mean calculations for verification
 
 Data Set			Rows		Columns		Description
-subject_test.txt	2947		1			Subjects correlating to test data 1:30
-X_test.txt			2947		561			Data measurements - test data set
-y_test.txt			2947		1			Activities correlating to test data 1:6
-subject_train.txt	7352		1			Subjects correlating to train data 1:30
-X_train.txt			7352		561			Data measurements - train data set
-y_train.txt			7352		1			Activities correlating to train data 1:6
-features.txt		561			2			Columns for data measurements
-accel				10299		563			Combined test and train including subject and activity columns
-accelmean			180			88			Final data set: means of all columns containing "std", "mean"
+
+<li>subject_test.txt		2947		1		Subjects correlating to test data 1:30</li>
+
+X_test.txt			2947		561		Data measurements - test data set
+
+y_test.txt			2947		1		Activities correlating to test data 1:6
+
+subject_train.txt		7352		1		Subjects correlating to train data 1:30
+
+X_train.txt			7352		561		Data measurements - train data set
+
+y_train.txt			7352		1		Activities correlating to train data 1:6
+
+features.txt			561		2		Columns for data measurements
+
+accel				10299		563		Combined test and train including subject and activity columns
+
+accelmean			180		88		Final data set: means of all columns containing "std", "mean"
 
 R function run_analysis.r performs the tasks that produce a data set with the columns in Table 1. 
 See document README.md for a detailed description of how run_analysis.r works.
